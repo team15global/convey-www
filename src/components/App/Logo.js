@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components'
 import logo from './logo.svg'
 
 const spin = keyframes`
-	from {
+  from {
     transform: rotate(0deg);
   }
   to {
