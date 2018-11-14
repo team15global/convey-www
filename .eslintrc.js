@@ -1,36 +1,36 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'commonjs': true,
-    'es6': true
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
   },
-  'extends': 'eslint:recommended',
-  'parserOptions': {
-    'ecmaFeatures': {
-      'jsx': true
+  extends: 'eslint:recommended',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    'ecmaVersion': 2018,
-    'sourceType': 'module'
+    ecmaVersion: 2018,
+    sourceType: 'module',
   },
-  'plugins': [
-    'react'
-  ],
-  'rules': {
-    'indent': [
-      'error',
-      'tab'
-    ],
-    'linebreak-style': [
-      'error',
-      'unix'
-    ],
-    'quotes': [
-      'error',
-      'single'
-    ],
-    'semi': [
-      'error',
-      'never'
-    ]
-  }
+  plugins: ['react'],
+  rules: {
+    indent: ['error', 2],
+    'linebreak-style': ['error', 'unix'],
+    quotes: ['error', 'single'],
+    semi: ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react/jsx-wrap-multilines': 'error',
+    'react/jsx-tag-spacing': 'error',
+    'react/prop-types': 'error',
+    'react/sort-prop-types': 'error',
+    'react/jsx-sort-default-props': 'error',
+    'react/jsx-sort-props': 'error',
+    'react/react-in-jsx-scope': 'error',
+    'react/no-unused-prop-types': 'error',
+    'react/no-unused-state': 'error',
+    'react/no-typos': 'error',
+    'react/no-is-mounted': 'error',
+  },
 }
